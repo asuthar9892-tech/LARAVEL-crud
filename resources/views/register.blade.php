@@ -21,7 +21,7 @@
     </div>
     @endif
 
-    <form action="{{ route('/') }}" method="POST">
+    <form action="{{ route('register') }}" method="POST">
         @csrf
         <div>
             <label>Name:</label>
@@ -51,6 +51,8 @@
         </div>
         <button type="submit">Register</button>
     </form>
+
+    <a  href="{{ route('login') }}"> Login Page</a>
 
 </body>
 
